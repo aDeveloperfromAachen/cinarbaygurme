@@ -67,11 +67,17 @@ body {
     background-color: rgba(0, 0, 0, 0.4);
 }
 
+/* LOGO STİLİ */
 .logo {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.5em;
-    color: var(--accent-color);
+    display: flex;
+    align-items: center;
+    height: 60px; /* Navbar yüksekliğine uygun hale getirin */
+}
+
+.logo img {
+    height: 100%; /* Parent div'in yüksekliğini almasını sağlar */
+    width: auto; /* Oranlarını korur */
+    max-width: 180px; /* Maksimum genişlik ayarı, logoyu çok büyütmez */
 }
 
 nav a {
