@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <header class="hero-section">
+    <header class="hero-section" id="hero-section">
         <div class="navbar">
             
             <div class="site-title"><a href="#hero-section">ÇINARBAY GURME</a></div> 
@@ -144,7 +144,7 @@
     </footer>
 
     <script>
-        // Mobil menüyü kontrol eden JavaScript kodu
+        // Mobil menüyü kontrol eden JavaScript kodu (Aynı kalır)
         document.addEventListener('DOMContentLoaded', () => {
             const hamburger = document.querySelector('.hamburger');
             const navMenu = document.getElementById('mobile-menu');
@@ -154,7 +154,6 @@
             hamburger.addEventListener('click', () => {
                 navMenu.classList.toggle('active');
                 hamburger.classList.toggle('active');
-                // İkonu değiştir (Hamburger <-> Kapat)
                 const icon = hamburger.querySelector('i');
                 if (navMenu.classList.contains('active')) {
                     icon.classList.remove('fa-bars');
